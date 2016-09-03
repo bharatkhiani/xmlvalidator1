@@ -1,0 +1,8 @@
+<!ELEMENT store (item)*>
+
+<!ELEMENT item (name,dept,price)>
+<!ATTLIST item type CDATA #REQUIRED>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT dept (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
