@@ -1,0 +1,7 @@
+﻿<!--XML file using a DTD--><!DOCTYPE store SYSTEM "C:\data\bharat\gareth1\xmlvalidator1\xmlvalidator1\bin\Debug\store.dtd"><store>
+  <item type="product">
+    <name>Asian Paints 1 litre pack</name>
+    <dept>Hardware and paints</dept>
+    <price>16.95</price>
+  </item>
+</store>

@@ -1,0 +1,8 @@
+<!--XML file using a DTD-->
+<store>
+  <item type="product">
+    <name>Asian Paints 1 litre pack</name>
+    <dept>Hardware and paints</dept>
+    <price>16.95</price>
+  </item>
+</store>

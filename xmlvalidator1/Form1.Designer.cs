@@ -30,11 +30,12 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txbXmlFile = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.txbExternalDtdFile = new System.Windows.Forms.TextBox();
             this.btnValidate = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txbResults = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lnkClearMessages = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -58,26 +59,16 @@
             this.txbXmlFile.Text = "Click here to choose...";
             this.txbXmlFile.Click += new System.EventHandler(this.txbXmlFile_Click);
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(15, 67);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(140, 24);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "External DTD:";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // txbExternalDtdFile
             // 
-            this.txbExternalDtdFile.Enabled = false;
-            this.txbExternalDtdFile.Location = new System.Drawing.Point(153, 65);
+            this.txbExternalDtdFile.Location = new System.Drawing.Point(175, 65);
             this.txbExternalDtdFile.Margin = new System.Windows.Forms.Padding(5);
             this.txbExternalDtdFile.Name = "txbExternalDtdFile";
             this.txbExternalDtdFile.ReadOnly = true;
-            this.txbExternalDtdFile.Size = new System.Drawing.Size(404, 26);
+            this.txbExternalDtdFile.Size = new System.Drawing.Size(382, 26);
             this.txbExternalDtdFile.TabIndex = 4;
             this.txbExternalDtdFile.Text = "Click here to choose...";
+            this.txbExternalDtdFile.Click += new System.EventHandler(this.txbExternalDtdFile_Click);
             // 
             // btnValidate
             // 
@@ -109,16 +100,37 @@
             this.txbResults.Size = new System.Drawing.Size(541, 225);
             this.txbResults.TabIndex = 7;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 68);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(155, 20);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "External DTD File:";
+            // 
+            // lnkClearMessages
+            // 
+            this.lnkClearMessages.AutoSize = true;
+            this.lnkClearMessages.Location = new System.Drawing.Point(98, 201);
+            this.lnkClearMessages.Name = "lnkClearMessages";
+            this.lnkClearMessages.Size = new System.Drawing.Size(137, 20);
+            this.lnkClearMessages.TabIndex = 9;
+            this.lnkClearMessages.TabStop = true;
+            this.lnkClearMessages.Text = "Clear Messages";
+            this.lnkClearMessages.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkClearMessages_LinkClicked);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(572, 454);
+            this.Controls.Add(this.lnkClearMessages);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.txbResults);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnValidate);
             this.Controls.Add(this.txbExternalDtdFile);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.txbXmlFile);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -134,11 +146,12 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txbXmlFile;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.TextBox txbExternalDtdFile;
         private System.Windows.Forms.Button btnValidate;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txbResults;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.LinkLabel lnkClearMessages;
     }
 }
 
